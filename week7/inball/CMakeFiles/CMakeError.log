@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /nas/kard/Documents/algolab/week7/inball/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_92861/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92861.dir/build.make CMakeFiles/cmTC_92861.dir/build
+make[1]: Entering directory '/nas/kard/Documents/algolab/week7/inball/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92861.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_92861.dir/CheckSymbolExists.c.o   -c /nas/kard/Documents/algolab/week7/inball/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_92861
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92861.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_92861.dir/CheckSymbolExists.c.o  -o cmTC_92861 
+CMakeFiles/cmTC_92861.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_92861.dir/build.make:97: recipe for target 'cmTC_92861' failed
+make[1]: *** [cmTC_92861] Error 1
+make[1]: Leaving directory '/nas/kard/Documents/algolab/week7/inball/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_92861/fast' failed
+make: *** [cmTC_92861/fast] Error 2
+
+File /nas/kard/Documents/algolab/week7/inball/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /nas/kard/Documents/algolab/week7/inball/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3102e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3102e.dir/build.make CMakeFiles/cmTC_3102e.dir/build
+make[1]: Entering directory '/nas/kard/Documents/algolab/week7/inball/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3102e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3102e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3102e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3102e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3102e.dir/CheckFunctionExists.c.o  -o cmTC_3102e -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3102e.dir/build.make:97: recipe for target 'cmTC_3102e' failed
+make[1]: *** [cmTC_3102e] Error 1
+make[1]: Leaving directory '/nas/kard/Documents/algolab/week7/inball/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3102e/fast' failed
+make: *** [cmTC_3102e/fast] Error 2
+
+

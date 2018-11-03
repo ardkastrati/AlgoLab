@@ -1,0 +1,3 @@
+/nas/kard/Documents/algolab/week3/almost-antenna/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/algolab/week3/almost-antenna/CMakeFiles/main.dir
+/nas/kard/Documents/algolab/week3/almost-antenna/CMakeFiles/edit_cache.dir

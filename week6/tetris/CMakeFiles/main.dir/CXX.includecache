@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nas/kard/Documents/algolab/week6/tetris/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+boost/graph/adjacency_list.hpp
+-
+boost/graph/push_relabel_max_flow.hpp
+-
+boost/graph/edmonds_karp_max_flow.hpp
+-
+

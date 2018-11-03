@@ -1,0 +1,3 @@
+/nas/kard/Documents/algolab/week6/tetris/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/algolab/week6/tetris/CMakeFiles/main.dir
+/nas/kard/Documents/algolab/week6/tetris/CMakeFiles/edit_cache.dir

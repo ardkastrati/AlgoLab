@@ -1,0 +1,3 @@
+/nas/kard/Documents/algolab/week7/maximum/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/algolab/week7/maximum/CMakeFiles/main.dir
+/nas/kard/Documents/algolab/week7/maximum/CMakeFiles/edit_cache.dir
