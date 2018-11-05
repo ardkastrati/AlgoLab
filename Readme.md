@@ -11,10 +11,10 @@ Some of the algorithms and libraries that we use in this course are:
 5. Split & List
 6. Binary Search
 7. Graph algorithms with BGL
-	7.1. Basics such as Dijkstra, MST, BFS, DFS, SCC, Blossom algorithm
-	7.2. Flows such as Push-Relabel, Edmonds-Karp
-	7.3. Advanced Flows such as minimum cost flows, matchings and cuts.
+	a) Basics such as Dijkstra, MST, BFS, DFS, SCC, Blossom algorithm
+	b) Flows such as Push-Relabel, Edmonds-Karp
+	c) Advanced Flows such as minimum cost flows, matchings and cuts.
 8. Geometric algorithms with CGAL
-	8.1. Bounding Volumes such as Convex Hull, Minimum Enclosing Circle
-	8.2. Triangulations
-	8.3. Voronoi Diagrams
+	a) Bounding Volumes such as Convex Hull, Minimum Enclosing Circle
+	b) Triangulations
+	c) Voronoi Diagrams
