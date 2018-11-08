@@ -1,0 +1,3 @@
+/nas/kard/Documents/algolab/week8/graypes/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/algolab/week8/graypes/CMakeFiles/main.dir
+/nas/kard/Documents/algolab/week8/graypes/CMakeFiles/edit_cache.dir

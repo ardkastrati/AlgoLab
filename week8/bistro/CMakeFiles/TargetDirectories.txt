@@ -1,0 +1,3 @@
+/nas/kard/Documents/algolab/week8/bistro/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/algolab/week8/bistro/CMakeFiles/main.dir
+/nas/kard/Documents/algolab/week8/bistro/CMakeFiles/edit_cache.dir
