@@ -24,28 +24,12 @@ void generate_segments(VP& segments, int pos, int m, VP& new_segments, VP& over_
 }
 
 int find_pos(VP& point, int s) {
-	int last_pos = 1, curr_size = s;
-	int best_pos = -1;
+	int best_pos = 1;
 	int i = 0;
-	while(i < point.size()) {
-		int curr_pos = point[i].first;
-		if(curr_pos - last_pos > 0 && curr_size <= 10) {
-				best_pos = curr_pos;
-				break;
-		}
-		while(i < point.size() && point[i].first == curr_pos && point[i].second == 0) {
-			curr_size++;
-			i++;
-		}
-		if(curr_size <= 10) {
-			best_pos = curr_pos;
-			break;
-		}
-		while(i < point.size() && point[i].first == curr_pos && point[i].second == 1) {
-			curr_size--;
-			i++;
-		}
-		last_pos = curr_pos + 1;
+	for(int i = 0; i < point.size() && s > 10; i++) {
+		if(point[i].second == 0) s++;
+		else s--;
+		if(s <= 10) best_pos = point[i].first;
 	}
 	return best_pos;
 }
@@ -58,8 +42,8 @@ void testcase() {
 	for(int i = 0; i < n; i++) {
 		int a, b; std::cin >> a >> b;
 		if(a > b) s++;
-		point.push_back(std::make_pair(a, 0));
-		point.push_back(std::make_pair(b, 1));
+		if(a == 1) s++; else point.push_back(std::make_pair(a, 0));
+		point.push_back(std::make_pair(b+1, 1));
 		segments.push_back(std::make_pair(b, a));
 	}
 	std::sort(point.begin(), point.end());
