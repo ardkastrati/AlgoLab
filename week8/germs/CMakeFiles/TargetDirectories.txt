@@ -1,0 +1,3 @@
+/nas/kard/Documents/algolab/week8/germs/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/algolab/week8/germs/CMakeFiles/main.dir
+/nas/kard/Documents/algolab/week8/germs/CMakeFiles/edit_cache.dir

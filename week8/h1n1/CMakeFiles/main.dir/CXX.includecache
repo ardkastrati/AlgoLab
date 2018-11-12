@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nas/kard/Documents/algolab/week8/h1n1/main.cpp
+CGAL/Exact_predicates_inexact_constructions_kernel.h
+-
+CGAL/Delaunay_triangulation_2.h
+-
+CGAL/Triangulation_face_base_with_info_2.h
+-
+iostream
+-
+vector
+-
+algorithm
+-
+limits
+-
+climits
+-
+cassert
+-
+boost/graph/adjacency_list.hpp
+-
+boost/graph/prim_minimum_spanning_tree.hpp
+-
+boost/graph/kruskal_min_spanning_tree.hpp
+-
+

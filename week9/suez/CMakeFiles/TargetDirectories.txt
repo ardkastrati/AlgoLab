@@ -1,0 +1,3 @@
+/nas/kard/Documents/algolab/week9/suez/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/algolab/week9/suez/CMakeFiles/main.dir
+/nas/kard/Documents/algolab/week9/suez/CMakeFiles/edit_cache.dir
