@@ -13,14 +13,12 @@ cassert
 -
 algorithm
 -
+limits
+-
 CGAL/QP_models.h
 -
 CGAL/QP_functions.h
 -
 CGAL/Gmpz.h
--
-CGAL/Exact_predicates_inexact_constructions_kernel.h
--
-CGAL/Delaunay_triangulation_2.h
 -
 
