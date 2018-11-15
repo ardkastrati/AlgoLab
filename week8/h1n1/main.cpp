@@ -88,7 +88,6 @@ void testcase(int n) {
         for (int i = 1; i < V; ++i) {
 		sol[i] = find_min_in_path(i, primpredmap, sol, weightmap, G);
         }
-
 	int m; std::cin >> m;
 	for(int i = 0; i < m; i++) {
 		K::Point_2 p;
