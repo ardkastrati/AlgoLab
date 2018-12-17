@@ -1,0 +1,22 @@
+# BEGIN Suggestions Esref Ozdemir
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# vi bindings. Disabled by default
+# set -o vi
+
+# some commonplace ls bindings
+alias ls='ls --color'
+alias ll='ls -l'
+alias l.='ls -al'
+
+# colorscheme for ls. This is just one example scheme that works reasonably well
+LS_COLORS="di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32";
+export LS_COLORS
+
+# disable <C-s> shortcut in bash. Normally, <C-s> disables all output to the
+# terminal; but this is rarely used or needed
+stty -ixon
+# END Suggestions Esref Ozdemir

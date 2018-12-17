@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nas/kard/Documents/algolab/week10/potw/goldeneye/main.cpp
+CGAL/Exact_predicates_inexact_constructions_kernel.h
+-
+CGAL/Delaunay_triangulation_2.h
+-
+CGAL/Triangulation_vertex_base_with_info_2.h
+-
+iostream
+-
+vector
+-
+algorithm
+-
+limits
+-
+climits
+-
+cassert
+-
+boost/pending/disjoint_sets.hpp
+-
+

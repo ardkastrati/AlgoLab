@@ -1,11 +1,4 @@
-// ALGOLAB BGL Tutorial 3
-// Code snippets demonstrating 
-// - MinCostMaxFlow with arbitrary edge costs using cycle_canceling
-// - MinCostMaxFlow with non-negative edge costs using successive_shortest_path_nonnegative_weights
-
-// Compile and run with one of the following:
-// g++ -std=c++11 -O2 bgl_mincostmaxflow.cpp -o bgl_mincostmaxflow; ./bgl_mincostmaxflow
-// g++ -std=c++11 -O2 -I path/to/boost_1_58_0 bgl_mincostmaxflow.cpp -o bgl_mincostmaxflow; ./bgl_mincostmaxflow
+// Another solution for marathon!
 
 // Includes
 // ========

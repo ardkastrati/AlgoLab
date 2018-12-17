@@ -1,0 +1,10 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+# bindkey -e
+# End of lines configured by zsh-newuser-install
+alias v=nvim
+alias gd='g++ -g -std=c++11 -Wall -Wextra -Wpedantic'
+alias gf='g++ -O2 -std=c++11 -Wall -Wextra -Wpedantic'

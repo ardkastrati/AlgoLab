@@ -1,0 +1,3 @@
+/nas/kard/Documents/algolab/week10/potw/goldeneye/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/algolab/week10/potw/goldeneye/CMakeFiles/main.dir
+/nas/kard/Documents/algolab/week10/potw/goldeneye/CMakeFiles/edit_cache.dir

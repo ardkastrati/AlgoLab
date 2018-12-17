@@ -1,0 +1,1 @@
+wget -r -np -nH --cut-dirs=2 -R "index.html*" https://judge.inf.ethz.ch/doc/algolab/tools/

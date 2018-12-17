@@ -78,8 +78,9 @@ CGAL_DONT_OVERRIDE_CMAKE_FLAGS:BOOL=TRUE
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Build type: Release, Debug, RelWithDebInfo or MinSizeRel
-CMAKE_BUILD_TYPE:STRING=Release
+//Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
+// CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -284,7 +285,7 @@ Boost_THREAD_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 Boost_THREAD_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CGAL_Boost_USE_STATIC_LIBS
 CGAL_Boost_USE_STATIC_LIBS-ADVANCED:INTERNAL=1
-CGAL_EXECUTABLE_TARGETS:INTERNAL=main
+CGAL_EXECUTABLE_TARGETS:INTERNAL=main;main
 //Directory containing the GraphicsView package
 CGAL_GRAPHICSVIEW_PACKAGE_DIR:INTERNAL=/usr//include/CGAL/
 //ADVANCED property for variable: CMAKE_AR

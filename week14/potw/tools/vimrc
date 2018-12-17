@@ -1,0 +1,135 @@
+set clipboard=unnamedplus
+
+" some useful remappings
+inoremap jk <ESC>
+nnoremap j gj
+nnoremap k gk
+nnoremap ; :
+let mapleader = "\<Space>"
+
+" intuitive vim line numbers and positioning
+set relativenumber
+set ruler
+
+" more generic search
+set ignorecase
+set smartcase
+
+" enable persistent history, save undo files in .vim directory
+let vimDir = '$HOME/.vim'
+let &runtimepath.=','.vimDir
+
+" Keep undo history across sessions by storing it in a file
+if has('persistent_undo')
+    let myUndoDir = expand(vimDir . '/undodir')
+    " Create dirs
+    call system('mkdir ' . vimDir)
+    call system('mkdir ' . myUndoDir)
+    let &undodir = myUndoDir
+    set undofile
+endif
+
+" use indentation of previous line
+set autoindent
+" use intelligent indentation
+set smartindent
+
+" tab settings using hard tabs
+" tab width is 4 spaces
+set tabstop=4 
+" indent also with 4 spaces
+set shiftwidth=4
+
+" alternative tab settings with spaces instead of hard tabs 
+" to use this uncomment the next 4 lines and comment the hard tab settings
+"set expandtab
+"set smarttab
+"set tabstop=8
+"set shiftwidth=4
+
+" disable vi compatibility (emulation of old bugs)
+set nocompatible
+
+" turn syntax highlighting on 
+syntax on 
+
+" turn line numbers on
+set number
+
+" in normal mode F2 will save the file
+nmap <F2> :w<CR>
+" in insert mode F2 will exit insert, save, enter insert again
+imap <F2> <ESC>:w<CR>a
+
+" reuse buffers of files which are already open, useful for quickfix
+set switchbuf=useopen
+
+" insert only one space after punctuation when joining lines with J
+set nojoinspaces
+
+" highlight search matches 
+set hlsearch
+" F3 will hide search highlights again
+map <F3> :nohlsearch<CR>
+
+" color scheme
+colorscheme desert
+
+" BEGIN Suggestions Esref Ozdemir
+
+" choose the one you like. This one supports bold fonts for
+" includes/type definitions/etc.
+colorscheme koehler
+
+" match < > as well, so we can use % for < > pairs
+set matchpairs+=<:>
+
+" show endlines and tabs via <leader>l
+set listchars=tab:>\ ,eol:¬
+nmap <leader>l :set list!<CR>
+
+" Each line continues until a \n character without wrapping.
+set nowrap
+
+" display incomplete commands
+set showcmd
+
+" do incremental searching
+set incsearch
+
+" current line shows absolute line number; all others show relative line number
+set number
+set relativenumber
+
+" C++ bindings for easier namespace insertion
+" Note that <C-s> binding requires "stty -ixon" in .bashrc
+autocmd Filetype cpp imap <C-s> std::
+autocmd Filetype cpp imap <C-b> boost::
+autocmd Filetype cpp imap <C-c> CGAL::
+
+" save changes via <leader>w
+nnoremap <leader>w :w<CR>
+
+" disable search highlighting via <leader>h
+nnoremap <leader>h :nohlsearch<CR>
+
+" open command history via Q
+nmap Q q:
+
+" delete lines using <C-u> when in insert mode
+" similar commands that don't require any setup are:
+" * delete last word via <C-w> when in insert mode
+" * delete last char via <C-h> when in insert mode
+inoremap <C-U> <C-G>u<C-U>
+
+" when opening a vertical split, open the split on the right
+set splitright
+
+" copy until the end of the line via Y instead of y$
+nnoremap Y y$
+
+" buffer navigation. <C-n> goes to the next buffer; <C-p> to the previous one.
+nnoremap <C-n> :bn<CR>
+nnoremap <C-p> :bp<CR>
+
+" END Suggestions Esref Ozdemir
