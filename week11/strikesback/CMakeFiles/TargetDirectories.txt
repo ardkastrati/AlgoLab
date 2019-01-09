@@ -1,0 +1,3 @@
+/nas/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/main.dir
+/nas/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/edit_cache.dir

@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /nas/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a8c9c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_a8c9c.dir/build.make CMakeFiles/cmTC_a8c9c.dir/build
+gmake[1]: Entering directory '/home/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8c9c.dir/CheckSymbolExists.c.o
+/usr/lib64/ccache/cc    -o CMakeFiles/cmTC_a8c9c.dir/CheckSymbolExists.c.o   -c /nas/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_a8c9c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8c9c.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc      -rdynamic CMakeFiles/cmTC_a8c9c.dir/CheckSymbolExists.c.o  -o cmTC_a8c9c 
+CMakeFiles/cmTC_a8c9c.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_a8c9c.dir/build.make:87: cmTC_a8c9c] Error 1
+gmake[1]: Leaving directory '/home/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_a8c9c/fast] Error 2
+
+File /nas/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /nas/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_52d99/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_52d99.dir/build.make CMakeFiles/cmTC_52d99.dir/build
+gmake[1]: Entering directory '/home/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52d99.dir/CheckFunctionExists.c.o
+/usr/lib64/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_52d99.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_52d99
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52d99.dir/link.txt --verbose=1
+/usr/lib64/ccache/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_52d99.dir/CheckFunctionExists.c.o  -o cmTC_52d99 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_52d99.dir/build.make:87: cmTC_52d99] Error 1
+gmake[1]: Leaving directory '/home/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_52d99/fast] Error 2
+
+
