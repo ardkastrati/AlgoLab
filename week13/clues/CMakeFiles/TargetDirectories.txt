@@ -1,0 +1,3 @@
+/nas/kard/Documents/AlgoLab/week13/clues/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/AlgoLab/week13/clues/CMakeFiles/main.dir
+/nas/kard/Documents/AlgoLab/week13/clues/CMakeFiles/edit_cache.dir

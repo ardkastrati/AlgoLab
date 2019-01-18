@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/nas/kard/Documents/algolab/AlgoLab/week11/strikesback/main.cpp
+/nas/kard/Documents/AlgoLab/week11/strikesback/main.cpp
 iostream
 -
 cassert

@@ -1,0 +1,3 @@
+/nas/kard/Documents/AlgoLab/week12/radiation/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/AlgoLab/week12/radiation/CMakeFiles/main.dir
+/nas/kard/Documents/AlgoLab/week12/radiation/CMakeFiles/edit_cache.dir

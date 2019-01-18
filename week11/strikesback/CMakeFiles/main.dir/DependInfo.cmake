@@ -4,18 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/nas/kard/Documents/algolab/AlgoLab/week11/strikesback/main.cpp" "/nas/kard/Documents/algolab/AlgoLab/week11/strikesback/CMakeFiles/main.dir/main.cpp.o"
+  "/nas/kard/Documents/AlgoLab/week11/strikesback/main.cpp" "/nas/kard/Documents/AlgoLab/week11/strikesback/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "CGAL_USE_GMP"
+  "CGAL_USE_GMPXX"
   "CGAL_USE_MPFR"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/x86_64-linux-gnu"
   "."
   )
 

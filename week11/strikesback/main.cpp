@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <cassert>
 #include <CGAL/QP_models.h>

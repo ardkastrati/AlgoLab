@@ -1,0 +1,3 @@
+/nas/kard/Documents/AlgoLab/week12/hongkong/CMakeFiles/rebuild_cache.dir
+/nas/kard/Documents/AlgoLab/week12/hongkong/CMakeFiles/main.dir
+/nas/kard/Documents/AlgoLab/week12/hongkong/CMakeFiles/edit_cache.dir

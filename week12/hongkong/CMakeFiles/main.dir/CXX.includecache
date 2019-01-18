@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/nas/kard/Documents/AlgoLab/week12/hongkong/main.cpp
+CGAL/Exact_predicates_exact_constructions_kernel.h
+-
+CGAL/Delaunay_triangulation_2.h
+-
+CGAL/Triangulation_face_base_with_info_2.h
+-
+iostream
+-
+vector
+-
+algorithm
+-
+climits
+-
+limits
+-
+cassert
+-
+tuple
+-
+queue
+-
+
